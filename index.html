@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="expo2023DohaQatar.png"/>
+        <title>QATAR EXPO 2023</title>
+    </head>
+        
+    <body> 
+        <div class ="header">
+            <img src="expo2023DohaQatar copy.png" height="80px" width="150px" style="padding:20px;padding-right: 0px;">
+            <h1>2023 International Horticultural Exposition</h1>
+        </div>
+        
+
+        <div class="Top_navigator">
+            <a class="active" href="index.html" target="_blank">Home</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="Gallery.html">Photo Gallery</a>
+            
+        </div>
+            
+        <div class="main-img">
+            <div class="main-text">
+              <p><b>Green Desert <br>Better Environment</b></p>
+              <text name="countdown" id="cd" ></text>
+            </div>
+            <div class ="container">
+                <h3><u>What is EXPO 2023 ?</u></h3>
+                <p>2023 International Horticultural Exposition or Expo 2023 is an International<br>
+                     Horticultural Expo to be hosted by Doha, Qatar. <br>
+                    The Horticultural Expo 2023 Doha will begin on October 2, 2023 <br>
+                    and conclude on March 28, 2024. Originally scheduled to be <br>
+                    held from 14 October 2021 to 17 March 2022, but it was rescheduled <br>
+                    to 2023 due to the COVID-19 pandemic. The Bureau International<br>
+                    des Expositions (BIE) general assembly in Paris formally recognised <br> 
+                    it on 22 November 2018 as an International Horticultural Exhibition. <br>
+                    The Expo will be organized under the theme "Green Desert, Better Environment".<br> 
+                    An 80-hectare (200-acre) site has been identified for this event to be held.</p>
+            </div>
+          </div>
+
+        <!-- Display the countdown timer in an element -->
+        <p id="cd"></p>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 2, 2023 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("cd").innerHTML = days + " Days : " + hours + " Hours : " + minutes + " mins : " + seconds + " secs <br> To Go For Expo 2023 !!";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("cd").innerHTML = "The time has come, Lets go green !!";
+        }}, 1000);
+        </script>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="tomatoes.jpeg" alt="tomatoes" style="width:350px;height:460px">
+              </div>
+              <div class="flip-box-back">
+                <h2><u>AIM</u></h2>
+                <p>Expo aims to develop comprehensive <br>
+                    solutions to address water scarcity, <br>
+                    land degradation, and climate change <br>
+                    challenges by promoting coordination <br>
+                    and sharing best practices.</p>
+              </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+      <div class="abc">
+          <p1>You can contact us at - </p1>
+      </div>
+      <div>
+          <a href="https://www.facebook.com/Expo2023Doha?mibextid=LQQJ4d" target="_blank"><img src="iconsF.jpg" width=50 height=50> </a>
+
+          <a href="https://www.linkedin.com/company/expo2023doha/" target="_blank"><img src="iconsL.jpg" width=50 height=50> </a>
+
+          <a href="https://twitter.com/expo2023doha?s=21&t=ROO94wX5BmQE8niOOsPmPA" target="_blank"><img src="iconsT.jpg" width=50 height=50> </a>
+
+      </div>
+      <p1>Or email your queries to us at : info@dohaexpo2023.gov.qa</p1>
+  </div>
+          
+    </body>
+
+
+    
+</html>
